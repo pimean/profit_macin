@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 from flask_bootstrap import Bootstrap
-from time import wait
+import time
 
 app = Flask(__name__)
 Bootstrap(app)
