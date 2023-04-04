@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block meta %}This is meta description for contact us page{% endblock %}
+{% block title %}Contact - Profit Macin{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1 class="text-center">Contact Us</h1>
+  <hr class="my-4">
+  <p>Welcome to <strong>Profit Macin</strong>!</p>
+  <p>If you would like to contact us via email, please write to <a href="mailto:support@profitmacin.com">support@profitmacin.com</a>.</p>
+  <p>We also encourage you to use the contact form below for a quick and easy way to get in touch with us. Our team is always here to provide top-notch service and support, and we look forward to hearing from you.</p>
+
+  <div class="row">
+    <div class="col-md-6">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name"><strong>Name:</strong></label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><strong>Email:</strong></label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message"><strong>Message:</strong></label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn button-calc">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

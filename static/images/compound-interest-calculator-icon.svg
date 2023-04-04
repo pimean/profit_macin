@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+	<title>compound-interest-calculator-icon-svg</title>
+	<style>
+		.s0 { fill: #1992d4;stroke: #000000 } 
+		.s1 { fill: #d96704;stroke: #000000 } 
+		.s2 { fill: none;stroke: #000000 } 
+	</style>
+	<path id="Layer" class="s0" d="m16 24c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8 4.4 0 8 3.6 8 8 0 4.4-3.6 8-8 8z"/>
+	<path id="Layer" class="s1" d="m48 56c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8 4.4 0 8 3.6 8 8 0 4.4-3.6 8-8 8z"/>
+	<path id="Layer" class="s2" d="m48 8l-32 48"/>
+</svg>

@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block meta %}This is meta description for business tools page{% endblock %}
+{% block title %}Free Business Online Tools{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Free Business Online Tools</h1>
+        <hr class="my-4">
+
+        <p>Introducing our "Business Tools" page, the ultimate destination for all your business analysis and decision-making needs. Explore our wide range of calculators and tools to help you make informed decisions and steer your business towards success.
+        </p>
+
+        <div class="row">
+
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/breakeven-point-calculator-icon.svg')}}" class="svg-icon" />
+                <h6 class="block-icon-title mt-3 text-dark">Breakeven Point Calculator</h6>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/currency-converter-icon.svg')}}" class="svg-icon" />
+                <h6 class="block-icon-title mt-3 text-dark">Currency Converter</h6>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/discount-calculator-icon.svg')}}" class="svg-icon" />
+                <h6 class="block-icon-title mt-3 text-dark">Discount Calculator</h6>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">            
+                <img src="{{ url_for('static', filename='images/domain-name-availability-checker-icon.svg')}}" class="svg-icon" />
+                <h6 class="block-icon-title mt-3 text-dark">Domain Name Availability Checker</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/investment-return-calculator-icon.svg')}}" class="svg-icon" />
+                <h6 class="block-icon-title mt-3 text-dark">Investment Return Calculator</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 my-3">
+            <a href="/profit-margin-calculator" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/profit-margin-calculator-icon.svg')}}" class="svg-icon" />                
+                <h6 class="block-icon-title mt-3 text-dark">Profit Margin Calculator</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/roi-calculator-icon.svg')}}" class="svg-icon" />                
+                <h6 class="block-icon-title mt-3 text-dark">ROI Calculator</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/sales-tax-calculator-icon.svg')}}" class="svg-icon" />                                
+                <h6 class="block-icon-title mt-3 text-dark">Sales Tax Calculator</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 my-3">
+            <a href="https://google.com" class="text-decoration-none">
+              <div class="text-center bg-light rounded-lg py-3">
+                <img src="{{ url_for('static', filename='images/tip-calculator-icon.svg')}}" class="svg-icon" />                                
+                <h6 class="block-icon-title mt-3 text-dark">Tip Calculator</h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        {% include 'sidebar.html' %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

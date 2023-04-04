@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+
+{% block meta %}This is meta description for profit margin calculator page{% endblock %}
+{% block title %}Profit Margin Calculator{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            
+            <h1>Profit Margin Calculator</h1>
+            <hr class="my-4">
+
+            <!-- Tool Section -->
+            <div class="row">
+                <!-- User Input Section -->
+                <div class="col-md-4">
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="cost">Cost ($):</label>
+                            <input type="number" step="0.01" class="form-control" id="cost" name="cost" value="{{ request.form.get('cost') }}" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="revenue">Revenue ($):</label>
+                            <input type="number" step="0.01" class="form-control" id="revenue" name="revenue" value="{{ request.form.get('revenue') }}" required>
+                        </div>
+                        <button type="submit" class="btn button-calc">Calculate</button>
+
+                    </form>
+                </div>
+                <!-- End of User Input Section -->
+
+                <!-- Result Section -->
+                <div class="col-md-8">
+
+                    {% if gross_margin is not none and profit is not none %}
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card shadow mb-4">
+                                    <div class="card-body bg-light-grey">
+                                        <h6 class="card-title">Cost</h6>
+                                        <p class="card-text cost-amount color-1-organge">${{ cost }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card shadow mb-4">
+                                    <div class="card-body bg-light-grey">
+                                        <h6 class="card-title">Sale Revenue</h6>
+                                        <p class="card-text revenue-amount color-2-blue">${{ revenue }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card shadow mb-4">
+                                    <div class="card-body bg-light-grey">
+                                        <h6 class="card-title">Net Profit</h6>
+                                        <p class="card-text profit-amount color-4-green"><strong>${{ profit }}</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card shadow mb-4">
+                                    <div class="card-body bg-light-grey">
+                                        <h6 class="card-title">Net Profit Margin</h6>
+                                        <p class="card-text margin-amount color-5-gold text-bold"><strong>{{ gross_margin }}%</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    {% endif %}
+
+                    <hr class="my-4">
+
+                    <!-- Tool Description -->
+                    {% block introduction %}
+                        <h2>Introduction</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis mauris a tellus ultrices rutrum ac a odio. Etiam sit amet malesuada magna, at fermentum mauris.</p>
+                    {% endblock %}
+                    <!-- End of Tool Description -->
+
+                </div>
+                <!-- End of Result Section -->
+
+            </div>
+            <!-- End of Tool Section -->
+
+        </div>
+
+      <div class="col-md-4">
+        {% include 'sidebar.html' %}
+      </div>
+
+
+    </div>
+  </div>
+
+{% endblock %}
