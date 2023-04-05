@@ -12,7 +12,7 @@ def index():
 
 #Finance Tools Route and Children
 @app.route('/finance-tools')
-def finacetools():
+def financetools():
     return render_template('finance-tools.html', active_page='finance-tools')
 
 @app.route('/profit-margin-calculator', methods=['GET', 'POST'])

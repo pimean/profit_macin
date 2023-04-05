@@ -7,7 +7,7 @@
     <!-- Primary meta tags -->
     <title>{% block title %}{% endblock %} - Profit Macin</title>
     <meta name="description" content="{% block meta %}{% endblock %}">
-    <meta name="keywords" content="{% block kws %}{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}{% endblock %}">
     
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
@@ -26,8 +26,8 @@
     <meta property="og:type" content="{% block og_type %}{% endblock %}">
     
     <!-- Other meta tags -->
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="My Name">
+    <meta name="robots" content="{% block robots %}{% endblock %}">
+    <meta name="author" content="{% block author %}{% endblock %}">
 
   </head>
   <body>
