@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 124" width="123" height="124">
+	<title>auto-insurance-calculator-icon-svg</title>
+	<defs>
+		<image  width="123" height="108" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAABsCAMAAAB9yj1uAAAAAXNSR0IB2cksfwAAAEtQTFRFGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUGZLUOkG1+wAAABl0Uk5TAAyU8v/rdgrUqYlT4Kvd5eZlQHkxTDNNMjj5QgEAAADOSURBVHic7dhLDsIwDIRhAwHKGwoF7n9SxAKJRbcZW5p/LvDJmbRpGrFYrpo+601EbIcE+ZtdxD6Jbu0QxzT7FGl0Oyfal0T7in0bNbn/wL++H6HJVMx+iuzXTN9vkT3N2Jlzu/adOTd7rW9Y8xq267vF1aZvL5u+vWzuJX1Tre/Mbyb6xlbZ3A30tuuau86Nrbddz1DXubH1NnsNG7uv7fqM8a2ot/nH1Tf0XWNubC+bfY7tYHN+9w1915ibe0nfVFtz133uutdczzG9/QH7UEoyiypy7QAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		.s0 { fill: #1992d4;stroke: #000000 } 
+		.s1 { fill: #d96704;stroke: #000000 } 
+		.s2 { fill: #2b2b2b;stroke: #000000 } 
+	</style>
+	<g id="Layer">
+		<use id="Layer" href="#img1" x="0" y="8"/>
+		<path id="Layer" class="s0" d="m33.5 56c-7.5 0-13.5-6-13.5-13.5 0-7.5 6-13.5 13.5-13.5 7.5 0 13.5 6 13.5 13.5 0 7.5-6 13.5-13.5 13.5z"/>
+		<path id="Layer" class="s1" d="m87.5 110c-7.5 0-13.5-6-13.5-13.5 0-7.5 6-13.5 13.5-13.5 7.5 0 13.5 6 13.5 13.5 0 7.5-6 13.5-13.5 13.5z"/>
+		<path id="Shape 1" class="s2" d="m85.7 27.9l1.7 1.1-51.1 80.1-1.7-1.1z"/>
+	</g>
+</svg>

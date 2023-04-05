@@ -1,7 +1,14 @@
 {% extends 'base.html' %}
 
+{% block title %}About{% endblock %}
 {% block meta %}This is meta description for about us page{% endblock %}
-{% block title %}About - Profit Macin{% endblock %}
+{% block kws %}about, about us, about us page{% endblock %}
+
+{% block og_title %}About{% endblock %}
+{% block og_meta %}This is meta description for about us page{% endblock %}
+{% block og_image %}{{ url_for('static', filename='images/thumbnails/my-image.jpg', _external=True) }}{% endblock %}
+{% block og_url %}{{ url_for('about') }}{% endblock %}
+{% block og_type %}website{% endblock %}
 
 {% block content %}
   <div class="container">

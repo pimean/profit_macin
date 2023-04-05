@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% block meta %}{% endblock %}">
 
-    <title>{% block title %}{% endblock %}</title>
+    <!-- Primary meta tags -->
+    <title>{% block title %}{% endblock %} - Profit Macin</title>
+    <meta name="description" content="{% block meta %}{% endblock %}">
+    <meta name="keywords" content="{% block kws %}{% endblock %}">
     
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+    <!-- CSS stylesheets -->    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="{% block og_title %}{% endblock %}">
+    <meta property="og:description" content="{% block og_meta %}{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}{% endblock %}">
+    <meta property="og:url" content="{% block og_url %}{% endblock %}">
+    <meta property="og:type" content="{% block og_type %}{% endblock %}">
+    
+    <!-- Other meta tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="My Name">
 
   </head>
   <body>
@@ -36,8 +52,7 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      <script src="https://kit.fontawesome.com/xxxxxx.js" crossorigin="anonymous"></script>
-  
+      <script src="https://kit.fontawesome.com/xxxxxx.js" crossorigin="anonymous"></script> 
       <script src="{{ url_for('static', filename='js/script.js') }}"></script>
       
   </body>
