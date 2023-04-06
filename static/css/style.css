@@ -154,6 +154,15 @@ footer {
     color: #ccc;
     
 }
+
+.footer-social {
+    display: inline-block;
+    margin-right: 0px;
+    font-size: 24px; /* increase the font size of the icon */
+    line-height: 1; /* set the line-height to 1 to remove any extra spacing */
+    padding: 10px; /* add some padding to create space around the icon */
+  }
+  
   
 .row.align-items-center {
     height: 100%;
