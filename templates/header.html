@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img src="{{ url_for('static', filename='images/logo.svg')}}" width="36" height="36" class="d-inline-block align-top" alt="">
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" width="36" height="36" class="d-inline-block align-top" alt="">
         PROFIT <span style="color: #d96704;">Macin</span>
 
       </a>
@@ -11,21 +11,21 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item {% if active_page == 'finance-tools' %}active{% endif %}">
-            <a class="nav-link menu-bold" href="/finance-tools">Finance Tools</a>
+            <a class="nav-link menu-bold" href="{{ url_for('financetools') }}">Finance Tools</a>
           </li>
           <li class="nav-item {% if active_page == 'business-tools' %}active{% endif %}">
-            <a class="nav-link menu-bold" href="/business-tools">Business Tools</a>
+            <a class="nav-link menu-bold" href="{{ url_for('businesstools') }}">Business Tools</a>
           </li>
           <li class="nav-item {% if active_page == 'tool-collections' %}active{% endif %}">
-            <a class="nav-link menu-bold" href="/tool-collections">Tool Collections</a>
+            <a class="nav-link menu-bold" href="{{ url_for('toolcollections') }}">Tool Collections</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link {% if active_page == 'about' %}active{% endif %}" href="/about">About</a>
+            <a class="nav-link {% if active_page == 'about' %}active{% endif %}" href="{{ url_for('about') }}">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="/contact">Contact</a>
+            <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact') }}">Contact</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link {% if active_page == 'disclaimer' %}active{% endif %}" href="/disclaimer">Disclaimer</a>
