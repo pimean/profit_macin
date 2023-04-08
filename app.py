@@ -76,7 +76,7 @@ def profit_margin_calculator():
         revenue = float(request.form['revenue'])
         gross_margin = round((revenue - cost) / revenue * 100, 2)
         profit = round(revenue - cost, 2)
-        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', gross_margin=gross_margin, profit=profit, cost=cost, revenue=revenue)
+        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', gross_margin=gross_margin, profit=profit, cost=cost, revenue=revenue, schema_markup = schema_markup_business_tools_profit_margin_calculator)
 
     else:
         return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', schema_markup = schema_markup_business_tools_profit_margin_calculator)
