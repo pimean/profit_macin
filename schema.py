@@ -14,14 +14,29 @@ schema_markup_business_tools_profit_margin_calculator = {
         "url": "https://www.profitmacin.com/profit-margin-calculator"
     },
 
+    "image": [
+        {
+            "@type": "ImageObject",
+            "url": "https://www.profitmacin.com/static/images/schema/profit-margin-calculator-app-screenshot.jpg",
+            "width": "1200",
+            "height": "628"
+        },
+        {
+            "@type": "ImageObject",
+            "url": "https://www.profitmacin.com/static/images/schema/profit-margin-calculator-app-logo.png",
+            "width": "180",
+            "height": "180"
+        }
+    ],
+
     "provider": {
         "@type": "Organization",
         "name": "Profit Macin",
         "logo": {
             "@type": "ImageObject",
             "url": "https://www.profitmacin.com/static/images/profitmacin-official-logo.png",
-            "width": "500",
-            "height": "500"
+            "width": "600",
+            "height": "600"
         }
     },
 
