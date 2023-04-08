@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block schema %}<script type="application/ld+json">{{ json_ld }}</script>{% endblock %}
+
 {% block title %}Profit Margin Calculator{% endblock %}
 {% block meta %}This is meta description for Profit Margin Calculator page{% endblock %}
 {% block keywords %}keyword 1, keyword 2, keyword 3{% endblock %}
