@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template
 from flask_bootstrap import Bootstrap
-import schema, json
+from schema import *
 
 app = Flask(__name__)
 Bootstrap(app)
@@ -70,19 +70,16 @@ def investment_return_calculator():
 
 @app.route('/profit-margin-calculator', methods=['GET', 'POST'])
 def profit_margin_calculator():
-    # Define schema object
-    schema_markup = schema.schema_markup_business_tools_profit_margin_calculator
-    # Convert the schema object to a JSON-LD string
-    json_ld = json.dumps(schema_markup, indent=4)
+
     if request.method == 'POST':
         cost = float(request.form['cost'])
         revenue = float(request.form['revenue'])
         gross_margin = round((revenue - cost) / revenue * 100, 2)
         profit = round(revenue - cost, 2)
-        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', gross_margin=gross_margin, profit=profit, cost=cost, revenue=revenue, json_ld = json_ld)
+        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', gross_margin=gross_margin, profit=profit, cost=cost, revenue=revenue)
 
     else:
-        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', json_ld = json_ld)
+        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools')
     
 @app.route('/roi-calculator')
 def roi_calculator():
@@ -170,7 +167,7 @@ def stock_profit_calculator():
 #Other Tools Pages
 @app.route('/qr-code-generator')
 def qr_code_generator():
-    return render_template('/other-tools/qr-code-generator.html', active_page='tool-collections')
+    return render_template('/other-tools/qr-code-generator.html', active_page='tool-collections', schema_markup = schema_markup)
 
 
 if __name__ == '__main__':

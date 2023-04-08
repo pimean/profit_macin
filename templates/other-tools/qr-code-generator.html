@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
+
 {% block title %}QR Code Generator{% endblock %}
 {% block meta %}This is meta description for QR Code Generator page{% endblock %}
 {% block keywords %}keyword 1, keyword 2, keyword 3{% endblock %}
