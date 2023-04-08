@@ -1,4 +1,4 @@
-schema_markup = {
+schema_markup_business_tools_profit_margin_calculator = {
     
     "@context": "https://schema.org",
     "@type": "WebApplication",

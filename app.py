@@ -167,7 +167,7 @@ def stock_profit_calculator():
 #Other Tools Pages
 @app.route('/qr-code-generator')
 def qr_code_generator():
-    return render_template('/other-tools/qr-code-generator.html', active_page='tool-collections', schema_markup = schema_markup)
+    return render_template('/other-tools/qr-code-generator.html', active_page='tool-collections', schema_markup = schema_markup_business_tools_profit_margin_calculator)
 
 
 if __name__ == '__main__':
