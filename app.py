@@ -79,7 +79,7 @@ def profit_margin_calculator():
         return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', gross_margin=gross_margin, profit=profit, cost=cost, revenue=revenue)
 
     else:
-        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools')
+        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', schema_markup = schema_markup_business_tools_profit_margin_calculator)
     
 @app.route('/roi-calculator')
 def roi_calculator():
@@ -167,7 +167,7 @@ def stock_profit_calculator():
 #Other Tools Pages
 @app.route('/qr-code-generator')
 def qr_code_generator():
-    return render_template('/other-tools/qr-code-generator.html', active_page='tool-collections', schema_markup = schema_markup_business_tools_profit_margin_calculator)
+    return render_template('/other-tools/qr-code-generator.html', active_page='tool-collections')
 
 
 if __name__ == '__main__':
