@@ -1,9 +1,10 @@
 schema_markup_business_tools_profit_margin_calculator = {
+    
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "WebApplication",
     "name": "Profit Margin Calculator",
     "description": "A free online tool for calculate profit margin for business.",
-    "applicationCategory": "Business Tool",
+    "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web-based",
     "browserRequirements": "Web browser with JavaScript support",
     "image": "https://example.com/images/tool1.png",
