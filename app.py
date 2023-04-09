@@ -28,23 +28,23 @@ def toolcollections():
 #General Pages
 @app.route('/about')
 def about():
-    return render_template('/pages/about.html', active_page='about')
+    return render_template('/pages/about.html', active_page='about', schema_markup = schema_markup_about_page, breadcrumb = get_breadcrumb(schema_markup_about_page) )
 
 @app.route('/contact')
 def contact():
-    return render_template('/pages/contact.html', active_page='contact')
-
-@app.route('/privacy-policy')
-def privacypolicy():
-    return render_template('/pages/privacy-policy.html', active_page='privacy-policy')
-
-@app.route('/terms')
-def terms():
-    return render_template('/pages/terms.html', active_page='terms')
+    return render_template('/pages/contact.html', active_page='contact', schema_markup = schema_markup_contact_page, breadcrumb = get_breadcrumb(schema_markup_contact_page))
 
 @app.route('/disclaimer')
 def disclaimer():
-    return render_template('/pages/disclaimer.html', active_page='disclaimer')
+    return render_template('/pages/disclaimer.html', active_page='disclaimer', schema_markup = schema_markup_disclaimer_page, breadcrumb = get_breadcrumb(schema_markup_disclaimer_page) )
+
+@app.route('/privacy-policy')
+def privacypolicy():
+    return render_template('/pages/privacy-policy.html', active_page='privacy-policy', schema_markup = schema_markup_privacy_policy_page, breadcrumb = get_breadcrumb(schema_markup_privacy_policy_page) )
+
+@app.route('/terms')
+def terms():
+    return render_template('/pages/terms.html', active_page='terms', schema_markup = schema_markup_terms_of_use_page, breadcrumb = get_breadcrumb(schema_markup_terms_of_use_page) )
 
 
 #Business Tools Pages
@@ -76,10 +76,10 @@ def profit_margin_calculator():
         revenue = float(request.form['revenue'])
         gross_margin = round((revenue - cost) / revenue * 100, 2)
         profit = round(revenue - cost, 2)
-        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', gross_margin=gross_margin, profit=profit, cost=cost, revenue=revenue, schema_markup = schema_markup_business_tools_profit_margin_calculator)
+        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', gross_margin=gross_margin, profit=profit, cost=cost, revenue=revenue, schema_markup = schema_markup_business_tools_profit_margin_calculator, breadcrumb = get_breadcrumb(schema_markup_business_tools_profit_margin_calculator) )
 
     else:
-        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', schema_markup = schema_markup_business_tools_profit_margin_calculator)
+        return render_template('/business-tools/profit-margin-calculator.html', active_page='business-tools', schema_markup = schema_markup_business_tools_profit_margin_calculator, breadcrumb = get_breadcrumb(schema_markup_business_tools_profit_margin_calculator) )
     
 @app.route('/roi-calculator')
 def roi_calculator():
@@ -168,6 +168,35 @@ def stock_profit_calculator():
 @app.route('/qr-code-generator')
 def qr_code_generator():
     return render_template('/other-tools/qr-code-generator.html', active_page='tool-collections')
+
+
+def get_breadcrumb(schema):
+    """Extracts breadcrumb values and URLs from a schema markup"""
+    
+    # Get the breadcrumb list from the schema markup
+    breadcrumb_list = schema.get('breadcrumb', {}).get('itemListElement', [])
+    
+    # Extract the name and URL for each breadcrumb item
+    breadcrumbs = []
+    for item in breadcrumb_list:
+        name = item.get('name', '')
+        url = item.get('item', '')
+        breadcrumbs.append((name, url))
+    
+    # Combine the name and URL for each breadcrumb item into a string
+    breadcrumb_string = '<ol class="breadcrumb">'
+    for i, (name, url) in enumerate(breadcrumbs):
+        if i == len(breadcrumbs) - 1:
+            breadcrumb_string += f'<li class="breadcrumb-item active" aria-current="page">{name}</li>'
+        else:
+            breadcrumb_string += f'<li class="breadcrumb-item"><a href="{url}" class="text-secondary">{name}</a></li>'
+    breadcrumb_string += '</ol>'
+    
+    return breadcrumb_string
+
+
+
+
 
 
 if __name__ == '__main__':

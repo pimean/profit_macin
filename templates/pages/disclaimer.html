@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
 {% block title %}Disclaimer{% endblock %}
 {% block meta %}This is meta description for disclaimer page{% endblock %}
@@ -37,10 +38,9 @@ video.tv_show: A television show or series
 
 {% block content %}
 <div class="container">
-  <h1 class="text-center">Disclaimer</h1>
+  <h1>Disclaimer</h1>
+  {{ breadcrumb | safe }}  <!-- Use the breadcrumb variable here -->
   <hr class="my-4">
- 
-  
     
   <p>The following disclaimer outlines the terms and conditions for the use of this website. By accessing and using this website, you agree to be bound by these terms and conditions. If you do not agree to these terms and conditions, please do not use this website.</p>
 

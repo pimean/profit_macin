@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
 {% block title %}Terms of Use{% endblock %}
 {% block meta %}This is meta description for Terms of Use page{% endblock %}
@@ -36,7 +37,8 @@ video.tv_show: A television show or series
 
 {% block content %}
 <div class="container">
-  <h1 class="text-center">Terms of Use</h1>
+  <h1>Terms of Use</h1>
+  {{ breadcrumb | safe }}  <!-- Use the breadcrumb variable here -->
   <hr class="my-4">
  
   <section>

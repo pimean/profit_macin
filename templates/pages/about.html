@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
 {% block title %}About{% endblock %}
 {% block meta %}This is meta description for about us page{% endblock %}
@@ -38,7 +39,8 @@ video.tv_show: A television show or series
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1 class="text-center">About Us</h1>
+        <h1>About Us</h1>
+        {{ breadcrumb | safe }}  <!-- Use the breadcrumb variable here -->
         <hr class="my-4">
         <p>Welcome to <strong>Profit Macin</strong>, the ultimate destination for individuals and small businesses seeking access to reliable and free financial tools.</p>
 
@@ -72,8 +74,7 @@ video.tv_show: A television show or series
         </section>
         
         
-        
-        <section>
+        <section class="our-tools-section">
           <h2>Our Tools</h2>
 
 <p>At <strong>Profit Macin</strong>, we offer a wide range of free online calculators and tools that can help you manage your finances and grow your business.</p>
