@@ -14,15 +14,15 @@ def index():
 #Category Pages
 @app.route('/finance-tools')
 def financetools():
-    return render_template('/categories/finance-tools.html', active_page='finance-tools')
+    return render_template('/categories/finance-tools.html', active_page='finance-tools', schema_markup = schema_markup_finance_tools_page, breadcrumb = get_breadcrumb(schema_markup_finance_tools_page))
 
 @app.route('/business-tools')
 def businesstools():
-    return render_template('/categories/business-tools.html', active_page='business-tools')
+    return render_template('/categories/business-tools.html', active_page='business-tools', schema_markup = schema_markup_business_tools_page, breadcrumb = get_breadcrumb(schema_markup_business_tools_page) )
 
 @app.route('/tool-collections')
 def toolcollections():
-    return render_template('/categories/tool-collections.html', active_page='tool-collections')
+    return render_template('/categories/tool-collections.html', active_page='tool-collections', schema_markup = schema_markup_tool_collections_page, breadcrumb = get_breadcrumb(schema_markup_tool_collections_page) )
 
 
 #General Pages
@@ -193,9 +193,6 @@ def get_breadcrumb(schema):
     breadcrumb_string += '</ol>'
     
     return breadcrumb_string
-
-
-
 
 
 

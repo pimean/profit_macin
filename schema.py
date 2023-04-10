@@ -1,3 +1,4 @@
+#Schema for General Pages
 schema_markup_about_page = {
     
     "@context": "https://schema.org",
@@ -32,8 +33,8 @@ schema_markup_about_page = {
     "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://www.profitmacin.com/business-tools-page.png",
-        "width": "1200",
-        "height": "630"
+        "width": "1372",
+        "height": "851"
     },
 
     "sameAs": [
@@ -458,6 +459,248 @@ schema_markup_terms_of_use_page = {
 
 }
 
+
+#Schema for category pages
+schema_markup_business_tools_page = {
+
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Business Tools",
+    "description": "List of business tools and calculators",
+    "url": "https://profitmacin.com/business-tools",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": "1",
+    "alternateName": "Business Calculator Collection",
+    "keywords": "breakeven point calculator, currency converter, discount calculator, domain name availability checker, investment return calculator, profit margin calculator, roi calculator, sales tax calculator, tip calculator",
+    "inLanguage": "en-US",
+
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://profitmacin.com/business-tools"
+    },
+
+    "images": {
+        "@type": "ImageObject",
+        "url": "https://www.profitmacin.com/business-tools-page.png",
+        "width": "1372",
+        "height": "851"
+    },
+
+    "sameAs": [
+        "https://www.facebook.com/profitmacin",
+        "https://www.instagram.com/profitmacin",
+        "https://www.twitter.com/profitmacin",
+        "https://www.youtube.com/@profitmacin",
+        "https://www.reddit.com/user/profitmacin",
+        "https://www.quora.com/profile/Profit-Macin"
+    ],
+
+    
+
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.profitmacin.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Business Tools",
+                "item": "https://www.profitmacin.com/business-tools"
+            }
+        ]
+    },
+
+    "itemListElement": [
+        {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Profit Margin Calculator",
+        "url": "https://www.profitmacin.com/profit-margin-calculator"
+        }
+
+    ],
+
+    "dateCreated": "2023-04-08",
+    "dateModified": "2023-04-08",
+    "datePublished": "2023-04-08"
+
+}
+
+schema_markup_finance_tools_page = {
+
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Finance Tools",
+    "description": "List of finance tools and calculators",
+    "url": "https://profitmacin.com/finance-tools",
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
+    "numberOfItems": "0",
+    "alternateName": "Finance Calculator Collection",
+    "keywords": "auto insurance calculator, net worth calculator, car loan calculator, compound interest calculator, cost of living calculator, credit card interest calculator, debt payoff calculator, home equity loan calculator, homeowners insurance calculator, hourly wage calculator, investment calculator, loan calculator, mortgage calculator, payroll calculator, retirement savings calculator, salary calculator, stock profit calculator",
+    "inLanguage": "en-US",
+    
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://profitmacin.com/finance-tools"
+    },
+
+    "images": {
+        "@type": "ImageObject",
+        "url": "https://www.profitmacin.com/finance-tools-page.png",
+        "width": "1427",
+        "height": "910"
+    },
+
+    "sameAs": [
+        "https://www.facebook.com/profitmacin",
+        "https://www.instagram.com/profitmacin",
+        "https://www.twitter.com/profitmacin",
+        "https://www.youtube.com/@profitmacin",
+        "https://www.reddit.com/user/profitmacin",
+        "https://www.quora.com/profile/Profit-Macin"
+    ],
+
+    
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.profitmacin.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Finance Tools",
+                "item": "https://www.profitmacin.com/finance-tools"
+            }
+        ]
+    },
+
+    "itemListElement": [
+
+    ],
+
+    "dateCreated": "2023-04-08",
+    "dateModified": "2023-04-08",
+    "datePublished": "2023-04-08"
+
+}
+
+schema_markup_tool_collections_page = {
+
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Tool Collections",
+    "description": "List of all tools and calculators",
+    "url": "https://profitmacin.com/tool-collections",
+    "itemListOrder": "Unordered",
+    "numberOfItems": "1",
+    "alternateName": "Online Tools Collection, Free Tools Hub, Useful Tools Directory",
+    "keywords": "finance tools, business tools, financial tools, other tools",
+    "inLanguage": "en-US",
+
+    "about": {
+        "@type": "Thing",
+        "name": "Free Online Tools and Calculators",
+        "description": "Various tools to assist with finance and business calculations and decision-making"
+    },
+    
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://profitmacin.com/tool-collections"
+    },
+
+    "images": {
+        "@type": "ImageObject",
+        "url": "https://www.profitmacin.com/tool-collections-page.png",
+        "width": "1408",
+        "height": "917"
+    },
+
+    
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.profitmacin.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tool Collections",
+                "item": "https://www.profitmacin.com/tool-collections"
+            }
+        ]
+    },
+
+    "hasPart": [
+        {
+            "@type": "ItemList",
+            "name": "Business Tools",
+            "description": "A collection of online tools related to business.",
+            "numberOfItems": 1,
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Profit Margin Calculator",
+                    "url": "https://profitmacin.com/profit-margin-calculator"
+                },
+            ]
+        },
+
+        {
+            "@type": "ItemList",
+            "name": "Finance Tools",
+            "description": "A collection of online tools related to financial.",
+            "numberOfItems": 0,
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "itemListElement": [
+                {
+
+                },
+            ]
+        },
+
+        {
+            "@type": "ItemList",
+            "name": "Other Tools",
+            "description": "A collection of other online tools",
+            "numberOfItems": 0,
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "itemListElement": [
+                {
+
+                },
+            ]
+        },
+
+
+    ],
+
+    "dateCreated": "2023-04-09",
+    "dateModified": "2023-04-09",
+    "datePublished": "2023-04-09",
+    "lastReviewed": "2023-04-09"
+
+}
+
+
+
+
+#Schema for business tools items
 schema_markup_business_tools_profit_margin_calculator = {
     
     "@context": "https://schema.org",
@@ -565,4 +808,4 @@ schema_markup_business_tools_profit_margin_calculator = {
 
 }
 
-
+#Schema for finance tools items

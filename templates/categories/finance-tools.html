@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
 {% block title %}Finance Tools{% endblock %}
 {% block meta %}This is meta description for Finance Tools page{% endblock %}
@@ -39,6 +40,7 @@ video.tv_show: A television show or series
     <div class="row">
       <div class="col-md-8">
         <h1>Free Finance Online Tools</h1>
+        {{ breadcrumb | safe }}  <!-- Use the breadcrumb variable here -->
         <hr class="my-4">
 
         <p>Introducing our "Finance Tools" page, a one-stop destination for all your financial calculations and analysis needs. Browse through our collection of calculators and tools to make informed decisions about your finances.

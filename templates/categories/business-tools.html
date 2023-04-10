@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
 {% block title %}Business Tools{% endblock %}
 {% block meta %}This is meta description for Business Tools page{% endblock %}
@@ -40,6 +41,7 @@ video.tv_show: A television show or series
     <div class="row">
       <div class="col-md-8">
         <h1>Free Business Online Tools</h1>
+        {{ breadcrumb | safe }}  <!-- Use the breadcrumb variable here -->
         <hr class="my-4">
 
         <p>Introducing our "Business Tools" page, the ultimate destination for all your business analysis and decision-making needs. Explore our wide range of calculators and tools to help you make informed decisions and steer your business towards success.

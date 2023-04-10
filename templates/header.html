@@ -24,9 +24,10 @@
           <li class="nav-item">
             <a class="nav-link {% if active_page == 'about' %}active{% endif %}" href="{{ url_for('about') }}">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-4">
             <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact') }}">Contact</a>
           </li>
+          
           <!-- <li class="nav-item">
             <a class="nav-link {% if active_page == 'disclaimer' %}active{% endif %}" href="/disclaimer">Disclaimer</a>
           </li>
@@ -38,9 +39,7 @@
           </li> -->
         </ul>
         <div>
-          <a class="text-dark mr-3" href="#">
-            <i class="far fa-bell"></i>
-          </a>
+
           <a class="btn btn-nav" href="#" data-toggle="modal" data-target="#subscribeModal">Subscribe</a>
         </div>
         {% include 'subscribe-modal.html' %}

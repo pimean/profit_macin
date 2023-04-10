@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
 {% block title %}Tool Collections{% endblock %}
 {% block meta %}This is meta description for Tool Collections page{% endblock %}
@@ -38,6 +39,7 @@ video.tv_show: A television show or series
 
 <div class="container">
   <h1 class="text-center">Tool Collections</h1>
+  {{ breadcrumb | safe }}  <!-- Use the breadcrumb variable here -->
   <hr class="my-4">
 
     <div class="row">

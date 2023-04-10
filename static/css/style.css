@@ -210,6 +210,10 @@ h2,h3,h4,h5,h6 {
     height: auto;
   }
 
+  .card-title {
+    margin-top: 0;
+  }
+
   .no-title-margin .card-title {
     margin: 0;
     padding-top: 0;
@@ -233,6 +237,7 @@ h2,h3,h4,h5,h6 {
 
   .breadcrumb {
     padding: .21rem 1rem;
+    
   }
 
     /* Set the color of the inactive breadcrumb links to red when hovered */
