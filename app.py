@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_from_directory
 from flask_bootstrap import Bootstrap
 from schema import *
 
@@ -194,6 +194,9 @@ def get_breadcrumb(schema):
     
     return breadcrumb_string
 
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+     <url>
+          <loc>https://www.profitmacin.com/</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>1.00</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/finance-tools</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.80</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/business-tools</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.80</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/tool-collections</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.80</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/profit-margin-calculator</loc>
+          <lastmod>2023-04-10T16:26:15+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.64</priority>
+     </url>
+          <url>
+          <loc>https://www.profitmacin.com/about</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.50</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/contact</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.50</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/disclaimer</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.50</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/privacy-policy</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.50</priority>
+     </url>
+     <url>
+          <loc>https://www.profitmacin.com/terms</loc>
+          <lastmod>2023-04-10T15:48:54+00:00</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>0.50</priority>
+     </url>
+
+</urlset>
