@@ -2,8 +2,8 @@
 {% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
 {% block title %}Privacy Policy{% endblock %}
-{% block meta %}This is meta description for Privacy Policy page{% endblock %}
-{% block keywords %}keyword 1, keyword 2, keyword 3{% endblock %}
+{% block meta %}This is the privacy policy for Profi Macin, which outlines the information we collect from visitors, how we use it, and how we protect user's privacy.{% endblock %}
+{% block keywords %}privacy policy, data collection, data processing, data subject rights, contact information{% endblock %}
 <!--
   As a general guideline, it's recommended to include 5-10 relevant and specific keywords 
   in the keywords meta tag, focusing on the main topics and themes of the page. 
@@ -13,8 +13,8 @@
 -->
 
 {% block og_title %}Privacy Policy{% endblock %}
-{% block og_meta %}This is meta description for Privacy Policy page{% endblock %}
-{% block og_image %}{{ url_for('static', filename='images/thumbnails/my-image.jpg', _external=True) }}{% endblock %}
+{% block og_meta %}This is the privacy policy for Profi Macin, which outlines the information we collect from visitors, how we use it, and how we protect user's privacy.{% endblock %}
+{% block og_image %}{{ url_for('static', filename='images/thumbnails/profitmacin-privacy-policy-cover.jpg', _external=True) }}{% endblock %}
 {% block og_url %}{{ url_for('privacypolicy', _external=True) }}{% endblock %}
 {% block og_type %}website{% endblock %}
 <!--
@@ -33,7 +33,7 @@ video.tv_show: A television show or series
 -->
 
 {% block robots %}index, follow{% endblock %} <!-- choices: index, noindex, follow, nofollow-->
-{% block author %}Bong Mean{% endblock %}
+{% block author %}Profit Macin{% endblock %}
 
 {% block content %}
 <div class="container">

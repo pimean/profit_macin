@@ -4,10 +4,10 @@ schema_markup_about_page = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "name": "About Us",
-    "description": "Free online resource for individuals and small businesses seeking free and reliable financial tools and business tools.",
+    "description": "Free online resource for individuals and small businesses",
     "about": "Profit Macin is an online resource for individuals and small businesses seeking free and reliable financial tools nad business tools.",
     "url": "https://www.profitmacin.com/profit-margin-calculator",
-    "keywords": "Financial tools, small businesses, business tools",
+    "keywords": "financial tools, small businesses, business tools",
     "inLanguage": "en-US",
 
     "mainEntityOfPage": {
@@ -103,7 +103,7 @@ schema_markup_contact_page = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Us",
-    "description": "Get in touch with us for any inquiries or feedback.",
+    "description": "Contact for any business inquiries, questions, or comments.",
     "url": "https://www.profitmacin.com/contact",
     "keywords": "contact us, customer support, feedback, inquiries, phone number, email, address, social media, help desk, support team",
     "inLanguage": "en-US",
@@ -127,6 +127,13 @@ schema_markup_contact_page = {
             "height": "500"
         }
     ],
+
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.profitmacin.com/static/thumbnails/profitmacin-contact-cover.jpg",
+        "width": "1200",
+        "height": "630"
+    },
 
     "sameAs": [
         "https://www.facebook.com/profitmacin",
@@ -193,6 +200,13 @@ schema_markup_disclaimer_page = {
             "height": "500"
         }
     ],
+
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.profitmacin.com/static/thumbnails/profitmacin-disclaimer-cover.jpg",
+        "width": "1200",
+        "height": "630"
+    },
 
     "sameAs": [
         "https://www.facebook.com/profitmacin",

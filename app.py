@@ -1,16 +1,9 @@
-from flask import Flask, request, render_template, send_from_directory, redirect
+from flask import Flask, request, render_template, send_from_directory
 from flask_bootstrap import Bootstrap
 from schema import *
 
 app = Flask(__name__)
 Bootstrap(app)
-
-@app.before_request
-def redirect_nonwww():
-    """Redirect non-www requests to www."""
-    if request.url.startswith('https://profitmacin.com'):
-        url = request.url.replace('https://profitmacin.com', 'https://www.profitmacin.com', 1)
-        return redirect(url, code=301)
 
 
 @app.route('/')
