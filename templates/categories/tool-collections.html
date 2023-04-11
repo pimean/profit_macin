@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
-{% block title %}Tool Collections{% endblock %}
+{% block title %}Free Online Tool and Calculator Collections - Profit Macin{% endblock %}
 {% block meta %}Discover our comprehensive tool collections - top-rated calculators and tools for finance, business, and more. Elevate your operations today.{% endblock %}
 {% block keywords %}finance tools, business tools, financial tools, other tools{% endblock %}
 <!--
@@ -12,7 +12,7 @@
   as this can be seen as spammy and may have a negative impact on your SEO.
 -->
 
-{% block og_title %}Tool Collections{% endblock %}
+{% block og_title %}Free Online Tool and Calculator Collections{% endblock %}
 {% block og_meta %}Discover our comprehensive tool collections - top-rated calculators and tools for finance, business, and more. Elevate your operations today.{% endblock %}
 {% block og_image %}{{ url_for('static', filename='images/thumbnails/profitmacin-tool-collections-cover.jpg', _external=True) }}{% endblock %}
 {% block og_url %}{{ url_for('toolcollections', _external=True) }}{% endblock %}

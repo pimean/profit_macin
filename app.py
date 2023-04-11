@@ -8,7 +8,7 @@ Bootstrap(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', schema_markup = schema_markup_home_page, breadcrumb = get_breadcrumb(schema_markup_home_page) )
 
 
 #Category Pages

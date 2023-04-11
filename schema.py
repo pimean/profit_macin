@@ -1,3 +1,102 @@
+#Schema for Homepage
+schema_markup_home_page = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Profit Macin",
+    "url": "https://www.profitmacin.com/",
+    "description": "Access a range of free and reliable financial tools and calculators to help you manage your personal and business finances. Explore Profit Macin's extensive collection of online tools and take control of your finances today.",
+    "about": "Profit Macin is an online resource for individuals and small businesses seeking free and reliable financial tools nad business tools.",
+    "keywords": "business tools, financial tools, business calculators, finance calculators, online calculators, free resources, personal finance",
+    "inLanguage": "en-US",
+
+    "mainEntity": {
+        "@type": "ItemList",
+        "name": "Profit Macin Tools and Calculators",
+        "description": "Browse Profit Macin's collection of free and easy-to-use business and finance tools and calculators.",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Business Tools",
+                "item": "https://www.profitmacin.com/business-tools"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Finance Tools",
+                "item": "https://www.profitmacin.com/finance-tools"
+            }
+        ]
+    },
+
+    "logo": [
+        {
+            "@type": "ImageObject",
+            "url": "https://www.profitmacin.com/static/images/profitmacin-official-logo.png",
+            "width": "500",
+            "height": "500"
+        }
+    ],
+
+    "creator": {
+        "@type": "Person",
+        "name": "Bong Mean",
+        "jobTitle": "Web Developer",
+        "url": "https://www.kongrei.com/"
+    },
+
+    "publisher": {
+        "@type": "Organization",
+        "name": "Profit Macin",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.profitmacin.com/static/images/profitmacin-official-logo.png",
+            "width": "500",
+            "height": "500"
+        }
+    },
+
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@profitmacin.com",
+        "url": "https://profitmacin.com/contact",
+    },
+
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.profitmacin.com"
+            }
+        ]
+    },
+
+
+    "sameAs": [
+        "https://www.facebook.com/profitmacin",
+        "https://www.instagram.com/profitmacin",
+        "https://www.twitter.com/profitmacin",
+        "https://www.youtube.com/@profitmacin",
+        "https://www.reddit.com/user/profitmacin",
+        "https://www.quora.com/profile/Profit-Macin"
+    ],
+
+    "dateCreated": "2023-04-10",
+    "dateModified": "2023-04-10",
+    "datePublished": "2023-04-10",
+    "lastReviewed": "2023-04-10",
+
+    "reviewedBy": {
+        "@type": "Organization",
+        "name": "Profit Macin"
+    }
+    
+}
+
 #Schema for General Pages
 schema_markup_about_page = {
     

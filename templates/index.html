@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+{% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
-{% block title %}Home{% endblock %}
-{% block meta %}This is meta description for homepage{% endblock %}
-{% block keywords %}keyword 1, keyword 2, keyword 3{% endblock %}
+{% block title %}Profit Macin - Free Business and Finance Tools{% endblock %}
+{% block meta %}Achieve your business and financial goals with Profit Macin's user-friendly tools. Get free access to reliable online tools and calculators created by experts.{% endblock %}
+{% block keywords %}business tools, financial tools, business calculators, finance calculators, online calculators, free resources, personal finance{% endblock %}
 <!--
   As a general guideline, it's recommended to include 5-10 relevant and specific keywords 
   in the keywords meta tag, focusing on the main topics and themes of the page. 
@@ -11,9 +12,9 @@
   as this can be seen as spammy and may have a negative impact on your SEO.
 -->
 
-{% block og_title %}Homepage{% endblock %}
-{% block og_meta %}This is meta description for homepage{% endblock %}
-{% block og_image %}{{ url_for('static', filename='images/thumbnails/my-image.jpg', _external=True) }}{% endblock %}
+{% block og_title %}Free Business and Finance Tools{% endblock %}
+{% block og_meta %}Achieve your business and financial goals with Profit Macin's user-friendly tools. Get free access to reliable online tools and calculators created by experts.{% endblock %}
+{% block og_image %}{{ url_for('static', filename='images/thumbnails/profitmacin-cover.jpg', _external=True) }}{% endblock %}
 {% block og_url %}{{ url_for('index', _external=True) }}{% endblock %}
 {% block og_type %}website{% endblock %}
 <!--
@@ -32,12 +33,259 @@ video.tv_show: A television show or series
 -->
 
 {% block robots %}index, follow{% endblock %} <!-- choices: index, noindex, follow, nofollow-->
-{% block author %}Bong Mean{% endblock %}
+{% block author %}Profit Macin{% endblock %}
 
 {% block content %}
-  <h1>Welcome to Profit Macin Mr Bong!</h1>
-  <p>We help businesses maximize their profits.</p>
-{% endblock %}
+  <section>
+  <h1>❤️</h1>
+    <p>Welcome to Profit Macin, your one-stop-shop for free and reliable financial tools. Our team of experts has created a range of online calculators and tools to help you take control of your finances and achieve your goals.</p>
+    <p>We believe that everyone deserves access to reliable and easy-to-use financial tools, regardless of their financial knowledge or experience. That's why our tools are designed to be user-friendly and intuitive, making them accessible to everyone.</p>
+  </section>
+
+  <section>
+    <h1 class="text-center homepage-h2">Business Tools and Calculators</h1>
+    <div class="row">
+
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('breakeven_point_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/breakeven-point-calculator-icon.svg') }}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Breakeven Point Calculator</h6>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('currency_converter') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/currency-converter-icon.svg') }}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Currency Converter</h6>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('discount_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/discount-calculator-icon.svg') }}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Discount Calculator</h6>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('domain_name_availability_checker') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">            
+            <img src="{{ url_for('static', filename='images/domain-name-availability-checker-icon.svg') }}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Domain Name Availability Checker</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('investment_return_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/investment-return-calculator-icon.svg') }}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Investment Return Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('profit_margin_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/profit-margin-calculator-icon.svg') }}" class="svg-icon" />                
+            <h6 class="block-icon-title mt-3 text-dark">Profit Margin Calculator</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('roi_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/roi-calculator-icon.svg') }}" class="svg-icon" />                
+            <h6 class="block-icon-title mt-3 text-dark">ROI Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('sales_tax_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/sales-tax-calculator-icon.svg') }}" class="svg-icon" />                                
+            <h6 class="block-icon-title mt-3 text-dark">Sales Tax Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('tip_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/tip-calculator-icon.svg') }}" class="svg-icon" />                                
+            <h6 class="block-icon-title mt-3 text-dark">Tip Calculator</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <h1 class="text-center homepage-h2">Finance Tools and Calculators</h1>
+    <div class="row">
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('auto_insurance_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/auto-insurance-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Auto Insurance Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('net_worth_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/net-worth-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Net Worth Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('car_loan_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/car-loan-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Car Loan Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('compound_interest_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/compound-interest-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Compound Interest Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('cost_of_living_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/cost-of-living-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Cost of Living Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('credit_card_interest_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/credit-card-interest-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Credit Card Interest Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('debt_payoff_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/debt-payoff-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Debt Payoff Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('home_equity_loan_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/home-equity-loan-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Home Equity Loan Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('homeowners_insurance_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/home-owners-insurance-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Homeowners Insurance Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('hourly_wage_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/hourly-wage-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Hourly Wage Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('investment_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/investment-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Investment Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('loan_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/loan-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Loan Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('mortgage_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/mortgage-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Mortgage Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('payroll_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/payroll-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Payroll Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('retirement_savings_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/retirement-savings-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Retirement Savings Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('salary_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/salary-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Salary Calculator</h6>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 my-3">
+        <a href="{{ url_for('stock_profit_calculator') }}" class="text-decoration-none">
+          <div class="text-center bg-light rounded-lg py-3">
+            <img src="{{ url_for('static', filename='images/stock-profit-calculator-icon.svg')}}" class="svg-icon" />
+            <h6 class="block-icon-title mt-3 text-dark">Stock Profit Calculator</h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  <section>
+
+  <section>
+    <h1 class="text-center homepage-h2">Other Tools and Resources</h1>
+    <div class="col-md-4 my-3">
+      <a href="{{ url_for('qr_code_generator') }}" class="text-decoration-none">
+        <div class="text-center bg-light rounded-lg py-3">
+          <img src="{{ url_for('static', filename='images/qr-code-generator-icon.svg')}}" class="svg-icon" />
+          <h6 class="block-icon-title mt-3 text-dark">QR Code Generator</h6>
+        </div>
+      </a>
+    </div>
+  </section>
+  {% endblock %}
 
 
 

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
-{% block title %}Finance Tools{% endblock %}
+{% block title %}Free Online Finance Tools and Calculators - Profit Macin{% endblock %}
 {% block meta %}Achieve financial success with our top-rated tools and calculators. From budgeting to investments, explore our comprehensive list now.{% endblock %}
 {% block keywords %}auto insurance calculator, net worth calculator, car loan calculator, compound interest calculator, cost of living calculator, credit card interest calculator, debt payoff calculator, home equity loan calculator, homeowners insurance calculator, hourly wage calculator, investment calculator, loan calculator, mortgage calculator, payroll calculator, retirement savings calculator, salary calculator, stock profit calculator{% endblock %}
 <!--
@@ -12,7 +12,7 @@
   as this can be seen as spammy and may have a negative impact on your SEO.
 -->
 
-{% block og_title %}Finance Tools{% endblock %}
+{% block og_title %}Free Online Finance Tools and Calculators{% endblock %}
 {% block og_meta %}Achieve financial success with our top-rated tools and calculators. From budgeting to investments, explore our comprehensive list now.{% endblock %}
 {% block og_image %}{{ url_for('static', filename='images/thumbnails/profitmacin-finance-tools-cover.jpg', _external=True) }}{% endblock %}
 {% block og_url %}{{ url_for('financetools', _external=True) }}{% endblock %}

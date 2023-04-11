@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
-{% block title %}Profit Margin Calculator{% endblock %}
-{% block meta %}Optimize your business's profitability with our Free Profit Margin Calculator Tool. Easily calculate profit margin and compare to industry standards.{% endblock %}
+{% block title %}Calculate Net Profit and Margin - Free Online Calculator - Profit Macin{% endblock %}
+{% block meta %}Calculate Net Profit & Margin with Ease using our Profit Margin Calculator. Input Cost & Sale Revenue, get results instantly.{% endblock %}
 {% block keywords %}profit margin calculator, free financial tool, business calculator, profitability calculator, gross profit calculator, margin calculator, profit calculator online, business profit calculator, profit margin formula, net profit calculator, profit margin percentage calculator, sales margin calculator, operating profit calculator{% endblock %}
 <!--
   As a general guideline, it's recommended to include 5-10 relevant and specific keywords 
@@ -12,7 +12,7 @@
   as this can be seen as spammy and may have a negative impact on your SEO.
 -->
 
-{% block og_title %}Profit Margin Calculator{% endblock %}
+{% block og_title %}Calculate Net Profit and Margin - Free Online Calculator{% endblock %}
 {% block og_meta %}Optimize your business's profitability with our Profit Margin Calculator tool. Easily calculate profit margin and compare to industry standards.{% endblock %}
 {% block og_image %}{{ url_for('static', filename='images/schema/profit-margin-calculator-app-screenshot.jpg', _external=True) }}{% endblock %}
 {% block og_url %}{{ url_for('profit_margin_calculator', _external=True) }}{% endblock %}

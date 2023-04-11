@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block schema %}<script type="application/ld+json">{{ schema_markup | tojson | safe }}</script>{% endblock %}
 
-{% block title %}Business Tools{% endblock %}
+{% block title %}Free Online Business Tools and Calculators - Profit Macin{% endblock %}
 {% block meta %}Explore our top-rated business tools and calculators to take your business to the next level. Discover the ultimate list and enhance your operations today.{% endblock %}
 {% block keywords %}breakeven point calculator, currency converter, discount calculator, domain name availability checker, investment return calculator, profit margin calculator, roi calculator, sales tax calculator, tip calculator{% endblock %}
 <!--
@@ -12,7 +12,7 @@
   as this can be seen as spammy and may have a negative impact on your SEO.
 -->
 
-{% block og_title %}Business Tools{% endblock %}
+{% block og_title %}Free Online Business Tools and Calculators{% endblock %}
 {% block og_meta %}Explore our top-rated business tools and calculators to take your business to the next level. Discover the ultimate list and enhance your operations today.{% endblock %}
 {% block og_image %}{{ url_for('static', filename='images/thumbnails/profitmacin-business-tools-cover.jpg', _external=True) }}{% endblock %}
 {% block og_url %}{{ url_for('businesstools', _external=True) }}{% endblock %}
